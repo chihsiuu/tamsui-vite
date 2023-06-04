@@ -1,0 +1,28 @@
+@import './animation.css';
+@import '../../../node_modules/@splidejs/vue-splide/dist/css/splide.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(236, 214, 77);
+  color: rgb(86, 89, 92);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  a:hover {
+  }
+}

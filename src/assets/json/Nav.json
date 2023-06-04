@@ -1,0 +1,156 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "name": "mission",
+      "routerName": ["history", "traffic4.0"],
+      "alt": "緣起",
+      "default": "nav_1.png",
+      "active": "nav_1_active.gif",
+      "disable": "nav_1.png",
+      "SW": 1,
+      "Lock": false,
+      "SubMenu": true,
+      "hashPage": "",
+      "hashTag": "",
+      "children": [
+        {
+          "id": 0,
+          "name": "history",
+          "alt": "淡水八景從哪來",
+          "SW": 1
+        },
+        {
+          "id": 1,
+          "name": "traffic4.0",
+          "alt": "淡水八景4.0",
+          "SW": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "intro",
+      "routerName": ["intro"],
+      "alt": "活動辦法",
+      "default": "nav_2.png",
+      "active": "nav_2_active.gif",
+      "SW": 1,
+      "Lock": false,
+      "SubMenu": false,
+      "hashPage": "intro",
+      "hashTag": "#intro__part2"
+    },
+    {
+      "id": 3,
+      "name": "scene",
+      "routerName": ["scene"],
+      "alt": "全民推薦大搜密",
+      "default": "nav_3.png",
+      "active": "nav_3_active.gif",
+      "SW": 1,
+      "Lock": false,
+      "SubMenu": false,
+      "hashPage": "scene",
+      "hashTag": ""
+    },
+    {
+      "id": 4,
+      "name": "photography",
+      "routerName": ["outstanding", "prize-list"],
+      "alt": "絕景攝影邀請賽",
+      "default": "nav_4.png",
+      "active": "nav_4_active.gif",
+      "disable": "nav_4_disable.png",
+      "SW": 1,
+      "Lock": false,
+      "SubMenu": false,
+      "hashPage": "intro",
+      "hashTag": "#intro__part2",
+      "children": [
+        {
+          "id": 0,
+          "name": "outstanding",
+          "alt": "作品欣賞",
+          "SW": 1
+        },
+        {
+          "id": 1,
+          "name": "prize-list",
+          "alt": "得獎作品",
+          "SW": 2
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "vote",
+      "routerName": ["vote"],
+      "alt": "全民票選抽大獎",
+      "default": "nav_5.png",
+      "active": "nav_5_active.gif",
+      "disable": "nav_5_disable.png",
+      "SW": 1,
+      "Lock": true,
+      "SubMenu": false,
+      "hashPage": "vote",
+      "hashTag": ""
+    },
+    {
+      "id": 6,
+      "name": "guide",
+      "routerName": ["guide"],
+      "alt": "精彩玩法路線圖",
+      "default": "nav_6.png",
+      "active": "nav_6_active.gif",
+      "SW": 0,
+      "Lock": false,
+      "SubMenu": false,
+      "hashPage": "guide",
+      "hashTag": ""
+    },
+    {
+      "id": 7,
+      "name": "sponsor",
+      "routerName": ["sponsor"],
+      "alt": "贊助商列表",
+      "default": "nav_7.png",
+      "active": "nav_7_active.png",
+      "SW": 0,
+      "Lock": false,
+      "SubMenu": false,
+      "hashPage": "sponsor",
+      "hashTag": ""
+    }
+  ],
+  "footer": [
+    {
+      "id": 0,
+      "name": "eat",
+      "alt": "吃什麼",
+      "default": "nav_footer_1.png",
+      "active": "nav_footer_1_h.png"
+    },
+    {
+      "id": 1,
+      "name": "play",
+      "alt": "玩什麼",
+      "default": "nav_footer_2.png",
+      "active": "nav_footer_2_h.png"
+    },
+    {
+      "id": 2,
+      "name": "stay",
+      "alt": "住哪裡",
+      "default": "nav_footer_3.png",
+      "active": "nav_footer_3_h.png"
+    },
+    {
+      "id": 3,
+      "name": "buy",
+      "alt": "歐咪呀給哪裡買",
+      "default": "nav_footer_4.png",
+      "active": "nav_footer_4_h.png"
+    }
+  ]
+}
