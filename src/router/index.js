@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from "vue-router";
 // import HomeView from '../views/HomeView.vue'
 
 const HomeView = () => import("../views/HomeView.vue");
-const AboutView = () => import("../views/AboutView.vue");
 const SceneView = () => import("../views/SceneView.vue");
 const EnjoyView = () => import("../views/EnjoyView.vue");
 const VoteView = () => import("../views/VoteView.vue");
@@ -16,11 +15,6 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: AboutView,
     },
     {
       path: "/scene",

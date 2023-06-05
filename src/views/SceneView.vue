@@ -17,19 +17,6 @@ const cardLayout = {
 };
 const showModal = ref(false);
 
-// const mapObj = SceneData.data.reduce((accumulator, currentValue) => {
-//   console.log(accumulator, currentValue.Title)
-//   return {
-//     ...accumulator
-//   }
-// }, {})
-// console.log(mapObj)
-
-// const sumWithInitial = array1.reduce(
-//   (accumulator, currentValue) => accumulator + currentValue,
-//   initialValue
-// );
-
 // 切換下拉選單
 watch(
   () => selectedItem.value,
@@ -60,10 +47,6 @@ const sortSelectItem = (array) => {
   });
 };
 
-const getSelect = (val) => {
-  selectedItem.value = val;
-};
-
 onMounted(() => {
   displayData.value = SceneData.data
     .filter((item) => item._Status_ == "3" || item._Status_ == "4")
@@ -74,10 +57,11 @@ onMounted(() => {
   setData();
 });
 </script>
+
 <template>
   <div class="pb-36">
     <div class="flex flex-row justify-between">
-      <SelectItem :data="sceneClass" @select="getSelect" />
+      <SelectItem :data="sceneClass" @select="(val) => (selectedItem = val)" />
       <Button @click="showModal = true" :msg="'推薦景點'" />
     </div>
 

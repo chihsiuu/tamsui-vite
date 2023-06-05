@@ -40,19 +40,16 @@ const setData = () => {
   sceneClass.value = [...new Set(sceneClass.value)];
 };
 
-const getSelect = (val) => {
-  selectedItem.value = val;
-};
-
 onMounted(() => {
   displayData.value = SceneData.data.filter((item) => item.PICID);
   rawData.value = displayData.value;
   setData();
 });
 </script>
+
 <template>
   <div class="pb-36">
-    <SelectItem :data="sceneClass" @select="getSelect" />
+    <SelectItem :data="sceneClass" @select="(val) => (selectedItem = val)" />
     <template v-for="(item, idx) in displayData" :key="item.ID">
       <CardItem
         :data="item"

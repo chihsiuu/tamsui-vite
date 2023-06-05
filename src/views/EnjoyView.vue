@@ -60,10 +60,6 @@ const sortSelectItem = (array) => {
   });
 };
 
-const getSelect = (val) => {
-  selectedItem.value = val;
-};
-
 onMounted(() => {
   setData(route.name);
 });
@@ -71,7 +67,7 @@ onMounted(() => {
 
 <template>
   <div class="pb-36">
-    <SelectItem :data="enjoyClass" @select="getSelect" />
+    <SelectItem :data="enjoyClass" @select="(val) => (selectedItem = val)" />
     <div class="flex flex-wrap justify-between">
       <div v-for="(item, idx) in displayData" :key="item.ID" class="card flex">
         <CardItem
