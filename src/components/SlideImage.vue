@@ -1,5 +1,5 @@
 <script setup>
-import { Splide, SplideSlide } from "../../node_modules/@splidejs/vue-splide";
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
 
 const props = defineProps({
   data: {

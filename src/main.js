@@ -2,18 +2,18 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./router";
-import VueSplide from "../node_modules/@splidejs/vue-splide";
+import VueSplide from "@splidejs/vue-splide";
 import LazyLoad from "lazy-load-vue3";
-import axios from "../node_modules/axios";
-import VueAxios from "../node_modules/vue-axios";
+import axios from "axios";
+import VueAxios from "vue-axios";
 
 // styles
-import "./assets/css/main.css";
+import "@/assets/css/main.css";
 
 // plugins
 // import i18nPlugin from './plugins/i18n'
-import { image } from "./plugins/url";
-import { stripHTML } from "./plugins/filters";
+import { image } from "@/plugins/url";
+import { stripHTML } from "@/plugins/filters";
 
 // components
 // import Modal from "@/components/Modal.vue";
