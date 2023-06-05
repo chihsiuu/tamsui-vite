@@ -6,16 +6,12 @@ import vue from "@vitejs/plugin-vue";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), svgBuilder("./src/assets/icons/")],
-  base: process.env.NODE_ENV === "production" ? "/tamsui-vite/" : "./",
+  // base: process.env.NODE_ENV === "production" ? "/tamsui-vite/" : "./",
+  base: "/tamsui-vite/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
-  },
-  optimizeDeps: {
-    exclude: [
-      "@ionic/core/loader", //fix weird Vite error "outdated optimize dep"
-    ],
   },
   // server: {
   //   proxy: {
