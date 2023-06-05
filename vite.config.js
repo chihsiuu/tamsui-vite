@@ -12,6 +12,11 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  optimizeDeps: {
+    exclude: [
+      "@ionic/core/loader", //fix weird Vite error "outdated optimize dep"
+    ],
+  },
   // server: {
   //   proxy: {
   //     '/api': {
